@@ -11,7 +11,7 @@ import fmt
 import time
 import net.url
 
-pub struct api_response {
+struct ApiResponse {
 pub:
     ok          bool                `json: "ok"`
     result      json.RawMessage     `json: "result, omitempty"`
@@ -20,7 +20,7 @@ pub:
     parameters  *ResponseParameters `json: "parameters, omitempty"`
 }
 
-pub struct update {
+struct Update {
 pub:
     user_id        int      `json: "user_id"`
     message        *Message `json: "message,omitempty"`
@@ -28,9 +28,9 @@ pub:
 
 }
 
-pub struct user {
+struct User {
 pub:
-    id         int64  `json: "id"`
+    id         i64    `json: "id"`
     is_bot     bool   `json: "is_bot, omitempty"`
     first_name string `json: "first_name"`
     last_name  string `json: "last_name, omitempty"`
@@ -42,9 +42,9 @@ pub:
     supports_inline_queries     bool   `json: "supports_inline_queries, omitempty"`
 }
 
-pub struct chat {
+struct Chat {
 pub:
-    chat_id     int64      `json: "id"`
+    chat_id     i64        `json: "id"`
     types       string     `json: "type"`
     title       string     `json: "title, omitempty"`
     username    string     `json: "username, omitempty"`
