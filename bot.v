@@ -8,10 +8,18 @@ module v_telegram_bot
 
 import json
 
-pub struct Bot {
+pub struct bot_api {
+pub:
+	token  string `json: "token"`
+	debug  bool   `json: "debug"`
+	buffer int    `json: "buffer"`
 
+	self     user       `json: "-"`
+	client   HTTPClient `json: "-"`
+	shutdown chan interface{}
+
+	Endpoint string
 }
-
 
 fn (bot *) send_message(c chat_table) (message, error) {
 	resp, err := bot.request(c)
@@ -29,7 +37,7 @@ fn Client(token, Endpoint string, client HTTPClient) (*bot_api, error) {
         shutdown: make(chan interface{}),
 
         Endpoint: Endpoint
-	}
+    }
 
 	self := bot.get_me()
 }
