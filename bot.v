@@ -8,7 +8,7 @@ module v_telegram_bot
 
 import json
 
-pub struct bot_api {
+struct bot_api {
 pub:
 	token  string `json: "token"`
 	debug  bool   `json: "debug"`
@@ -42,10 +42,10 @@ fn Client(token, Endpoint string, client HTTPClient) (*bot_api, error) {
 	self := bot.get_me()
 }
 
-fn (bot *bot_api) get_me() (user, error) {
+fn (bot *bot_api) get_me() (User, error) {
 	resp := bot.Request("getMe", none)
 
-	var usr user
+	var usr User
 	err := json.Unmarshal(resp.Result, &usr)
 
 	return usr, err
