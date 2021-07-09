@@ -21,7 +21,7 @@ pub:
 	Endpoint string
 }
 
-fn (bot *) send_message(c chat_table) (message, error) {
+fn (bot *bot_api) send_message(c chat_table) (message, error) {
 	resp, err := bot.request(c)
 }
 
