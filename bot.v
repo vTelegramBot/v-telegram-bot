@@ -8,6 +8,10 @@ module v_telegram_bot
 
 import json
 
+pub struct Bot {
+
+}
+
 
 fn (bot *) send_message(c chat_table) (message, error) {
 	resp, err := bot.request(c)
@@ -17,4 +21,24 @@ fn Bot(token string) (*bot_api, error) {
 	return (token, endpoint, &http.Client{})
 }
 
-fn 
+fn Client(token, Endpoint string, client HTTPClient) (*bot_api, error) {
+    bot := &bot_api{
+        token:    token,
+        client:   client,
+        buffer:   100,
+        shutdown: make(chan interface{}),
+
+        Endpoint: Endpoint
+	}
+
+	self := bot.get_me()
+}
+
+fn (bot *bot_api) get_me() (user, error) {
+	resp := bot.Request("getMe", none)
+
+	var usr user7
+	err := json.Unmarshal(resp.Result, &usr)
+
+	return usr, err
+}
