@@ -45,7 +45,7 @@ fn Client(token, Endpoint string, client HTTPClient) (*bot_api, error) {
 fn (bot *bot_api) get_me() (user, error) {
 	resp := bot.Request("getMe", none)
 
-	var usr user7
+	var usr user
 	err := json.Unmarshal(resp.Result, &usr)
 
 	return usr, err
