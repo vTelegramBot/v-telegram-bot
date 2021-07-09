@@ -30,8 +30,8 @@ pub:
 
 pub struct user {
 pub:
-	id         int64  `json: "id"`
-	is_bot     bool   `json: "is_bot, omitempty"`
+    id         int64  `json: "id"`
+    is_bot     bool   `json: "is_bot, omitempty"`
     first_name string `json: "first_name"`
     last_name  string `json: "last_name, omitempty"`
     username   string `json: "username, omitempty"`
