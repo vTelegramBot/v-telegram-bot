@@ -17,10 +17,20 @@ pub:
 
 pub struct Update {
 pub:
-    user_id        int      `json: "user_id"`
-    message        *Message `json: "message,omitempty"`
-    edited_message *Message `json: "edited_message",omitempty"`
-
+    update_id            int                 `json: "update_id"`
+    message              *Message            `json: "message, omitempty"`
+    edited_message       *Message            `json: "edited_message, omitempty"`
+    channel_post         *Message            `json: "channel_post, omitempty"`
+    edited_channel_post  *Message            `json: "edited_channel_post, omitempty"`
+    inline_query         *InlineQuery        `json: "inline_query, omitempty"`
+    chosen_inline_result *ChosenInlineResult `json: "chosen_inline_result, omitempty"`
+    callback_query       *CallbackQuery      `json: "callback_query, omitempty"`
+    shipping_query       *ShippingQuery      `json: "shipping_query, omitempty"`
+    pre_checkout_query   *PreCheckoutQuery   `json: "pre_checkout_query, omitempty"`
+    poll                 *Poll               `json: "poll, omitempty"`
+    poll_answer          *PollAnswer         `json: "poll_answer, omitempty"`
+    my_chat_member       *ChatMemberUpdated  `json: "my_chat_member"`
+    chat_member          *ChatMemberUpdated  `json: "chat_member"`
 }
 
 pub struct User {
