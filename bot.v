@@ -13,7 +13,7 @@ type HTTPClient interface {
 	Post(url string, data url.Values) (*http.Response, error)
 }
 
-struct BotApi {
+pub struct Api {
 pub:
 	token  string `json: "token"`
 	debug  bool   `json: "debug"`
@@ -26,15 +26,15 @@ pub:
 	Endpoint string
 }
 
-fn (bot *BotApi) send_message(c chat_table) (Message, error) {
+fn (bot *Api) send_message(c chat_table) (Message, error) {
 	resp, err := bot.request(c)
 }
 
-fn Bot(token string) (*BotApi, error) {
+fn Bot(token string) (*Api, error) {
 	return (token, endpoint, &http.Client{})
 }
 
-fn Client(token, Endpoint string, client HTTPClient) (*BotApi, error) {
+fn Client(token, Endpoint string, client HTTPClient) (*Api, error) {
     bot := &BotApi{
         token:    token,
         client:   client,
@@ -44,10 +44,10 @@ fn Client(token, Endpoint string, client HTTPClient) (*BotApi, error) {
         Endpoint: Endpoint
     }
 
-	self := bot.get_me()
+    self := bot.get_me()
 }
 
-fn (bot *BotApi) get_me() (User, error) {
+fn (bot *Api) get_me() (User, error) {
 	resp := bot.Request("getMe", none)
 
 	var usr User

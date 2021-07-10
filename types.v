@@ -6,10 +6,7 @@
 
 module v_telegram_bot
 
-import time
-import net.url
-
-struct ApiResponse {
+pub struct ApiResponse {
 pub:
     ok          bool                `json: "ok"`
     result      json.RawMessage     `json: "result, omitempty"`
@@ -18,7 +15,7 @@ pub:
     parameters  *ResponseParameters `json: "parameters, omitempty"`
 }
 
-struct Update {
+pub struct Update {
 pub:
     user_id        int      `json: "user_id"`
     message        *Message `json: "message,omitempty"`
@@ -26,7 +23,7 @@ pub:
 
 }
 
-struct User {
+pub struct User {
 pub:
     id         i64    `json: "id"`
     is_bot     bool   `json: "is_bot, omitempty"`
@@ -40,7 +37,7 @@ pub:
     supports_inline_queries     bool   `json: "supports_inline_queries, omitempty"`
 }
 
-struct Chat {
+pub struct Chat {
 pub:
     id          i64        `json: "id"`
     types       string     `json: "type"`
