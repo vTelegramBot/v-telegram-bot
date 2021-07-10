@@ -7,7 +7,6 @@
 module v_telegram_bot
 
 import encoding.json
-import fmt
 import time
 import net.url
 
