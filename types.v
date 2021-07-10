@@ -6,7 +6,6 @@
 
 module v_telegram_bot
 
-import encoding.json
 import time
 import net.url
 
@@ -43,7 +42,7 @@ pub:
 
 struct Chat {
 pub:
-    chat_id     i64        `json: "id"`
+    id          i64        `json: "id"`
     types       string     `json: "type"`
     title       string     `json: "title, omitempty"`
     username    string     `json: "username, omitempty"`
