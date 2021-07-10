@@ -30,12 +30,12 @@ fn (bot *BotApi) send_message(c chat_table) (Message, error) {
 	resp, err := bot.request(c)
 }
 
-fn Bot(token string) (*bot_api, error) {
+fn Bot(token string) (*BotApi, error) {
 	return (token, endpoint, &http.Client{})
 }
 
 fn Client(token, Endpoint string, client HTTPClient) (*BotApi, error) {
-    bot := &bot_api{
+    bot := &BotApi{
         token:    token,
         client:   client,
         buffer:   100,
