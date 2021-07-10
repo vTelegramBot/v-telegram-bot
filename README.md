@@ -5,5 +5,10 @@
 [![Telegram][tg-img]][tg-url]
 </div>
 
+## Installing [v-telegram-bot](https://git-scm.com/downloads)
+```sh
+$ git clone https://github.com/vTelegramBot/v-telegram-bot.git ~/.vmodules/vTelegramBot/v-telegram-bot
+```
+
 [tg-img]: https://img.shields.io/badge/-Telegram-111314?style=for-the-badge&logo=telegram&logoColor=28A9E0
 [tg-url]: https://t.me/vTelegramBotApi
