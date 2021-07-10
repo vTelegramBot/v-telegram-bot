@@ -8,7 +8,12 @@ module v_telegram_bot
 
 import json
 
-struct bot_api {
+type HTTPClient interface {
+	Do(req *http.Request) (*http.Response, error)
+	Post(url string, data url.Values) (*http.Response, error)
+}
+
+struct BotApi {
 pub:
 	token  string `json: "token"`
 	debug  bool   `json: "debug"`
@@ -21,7 +26,7 @@ pub:
 	Endpoint string
 }
 
-fn (bot *bot_api) send_message(c chat_table) (message, error) {
+fn (bot *BotApi) send_message(c chat_table) (Message, error) {
 	resp, err := bot.request(c)
 }
 
@@ -29,7 +34,7 @@ fn Bot(token string) (*bot_api, error) {
 	return (token, endpoint, &http.Client{})
 }
 
-fn Client(token, Endpoint string, client HTTPClient) (*bot_api, error) {
+fn Client(token, Endpoint string, client HTTPClient) (*BotApi, error) {
     bot := &bot_api{
         token:    token,
         client:   client,
@@ -42,7 +47,7 @@ fn Client(token, Endpoint string, client HTTPClient) (*bot_api, error) {
 	self := bot.get_me()
 }
 
-fn (bot *bot_api) get_me() (User, error) {
+fn (bot *BotApi) get_me() (User, error) {
 	resp := bot.Request("getMe", none)
 
 	var usr User
