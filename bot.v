@@ -26,8 +26,20 @@ pub:
 	Endpoint string
 }
 
+fn (bot *Api) request(c chat_table) (*ApiResponse, error) {
+	params := c.params()
+}
+
 fn (bot *Api) send_message(c chat_table) (Message, error) {
 	resp, err := bot.request(c)
+	if err != none {
+		return Message{}, err
+	}
+
+	var msg Message
+	err := json.Unmarshal(resp.Result, *msg)
+
+	return msg, err
 }
 
 fn Bot(token string) (*Api, error) {
@@ -35,7 +47,7 @@ fn Bot(token string) (*Api, error) {
 }
 
 fn Client(token, Endpoint string, client HTTPClient) (*Api, error) {
-    bot := &BotApi{
+    bot := &Api{
         token:    token,
         client:   client,
         buffer:   100,
