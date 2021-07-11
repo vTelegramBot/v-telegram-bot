@@ -10,5 +10,28 @@
 $ git clone https://github.com/vTelegramBot/v-telegram-bot.git ~/.vmodules/vTelegramBot/v-telegram-bot
 ```
 
+## Example
+<details>
+	<summary>Click to see a basic example</summary>
+
+```v
+import vTelegramBot.v_telegram_bot as dp
+
+fn main() {
+	mut bot := dp.Bot(token: 'TOKEN')
+}
+```
+</details>
+
+## Official aiogram resources:
+- News: [@vTelegramBotApi](https://t.me/vTelegramBotApi)
+- Documentation: [docs/doc.md](https://github.com/vTelegramBot/v-telegram-bot/tree/master/docs/doc.md)
+- Source: [GitHub repo](https://github.com/vTelegramBot/v-telegram-bot)
+- Issues/Bug tracker: [GitHub issues tracker](https://github.com/vTelegramBot/v-telegram-bot/issues)
+- Test Bot: [@v4vendettaBot](https://t.me/v4vendettaBot)
+
+## Code Contributors
+xxx
+
 [tg-img]: https://img.shields.io/badge/-Telegram-111314?style=for-the-badge&logo=telegram&logoColor=28A9E0
 [tg-url]: https://t.me/vTelegramBotApi
