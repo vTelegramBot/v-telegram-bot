@@ -18,12 +18,12 @@ $ git clone https://github.com/vTelegramBot/v-telegram-bot.git ~/.vmodules/vTele
 import vTelegramBot.v_telegram_bot as dp
 
 fn main() {
-	mut bot := dp.Bot(token: 'TOKEN')
+    mut bot := dp.Bot(token: 'TOKEN') ?
 }
 ```
 </details>
 
-## Official aiogram resources:
+## Official resources:
 - News: [@vTelegramBotApi](https://t.me/vTelegramBotApi)
 - Documentation: [docs/doc.md](https://github.com/vTelegramBot/v-telegram-bot/tree/master/docs/doc.md)
 - Source: [GitHub repo](https://github.com/vTelegramBot/v-telegram-bot)
