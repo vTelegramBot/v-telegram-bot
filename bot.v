@@ -30,7 +30,7 @@ fn (bot *Api) request(c chat_table) (*ApiResponse, error) {
 	params := c.params()
 }
 
-fn (bot *Api) send_message(c chat_table) (Message, error) {
+fn (bot *Api) send_message() (Message, error) {
 	resp, err := bot.request(c)
 	if err != none {
 		return Message{}, err
