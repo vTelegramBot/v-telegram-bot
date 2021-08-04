@@ -6,7 +6,14 @@
 
 module v_telegram_bot
 
+import net.url
 import json
+import os
+import time
+import net.http
+
+import encoding.json
+
 
 type HTTPClient interface {
 	Do(req *http.Request) (*http.Response, error)

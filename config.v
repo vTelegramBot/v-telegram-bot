@@ -44,3 +44,47 @@ const (
     MarkdownV2 = "MarkdownV2"
     HTML       = "HTML"
 )
+
+type BaseChat struct {
+    chat_id                     i64
+    username                    string
+    reply_to_message_id         int
+    reply_markup                interface{}
+    disable_notification        bool
+    allow_sending_without_reply bool
+}
+
+fn (chat *BaseChat) param(Param, error) {
+    param := make(Param)
+
+    param.
+}
+
+type BaseFile struct {
+    BaseChat
+    File interface{}
+}
+
+fn (file BaseFile) param() (Param, error) {
+    return file.BaseChat.param()
+}
+
+type BaseEdit struct {
+    chat_id           i64
+    username          string
+    message_id        int
+    inline_message_id string
+    reply_markup      *InlineKeyboardMarkup
+}
+
+fn (edit BaseEdit) param() (Param, error) {
+    param := make(Param)
+}
+
+MessageConfig struct {
+    BaseChat
+    text                     string
+    parse_mode               string
+    entities                 []MessageEntity
+    disable_web_page_preview bool
+}
