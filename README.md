@@ -1,4 +1,4 @@
-# [v-telegram-bot](https://t.me/vTEIEGRAMBOT)
+# [v-telegram-bot](https://t.me/vTeIegramBot)
 <div align="center">
 	<img type="image/jpeg" width="850" height="250" src="./assets/img/background.jpg" alt="V for Vendetta"/>
 
@@ -31,7 +31,7 @@ fn main() {
 </details>
 
 ## Official resources:
-- News: [@vTelegramBot](https://t.me/vTEIEGRAMBOT)
+- News: [@vTelegramBot](https://t.me/vTeIegramBot)
 - Documentation: [docs/doc.md](https://github.com/vTelegramBot/v-telegram-bot/tree/master/docs/doc.md)
 - Source: [GitHub repo](https://github.com/vTelegramBot/v-telegram-bot)
 - Issues/Bug tracker: [GitHub issues tracker](https://github.com/vTelegramBot/v-telegram-bot/issues)
@@ -41,4 +41,4 @@ fn main() {
 xxx
 
 [tg-img]: https://img.shields.io/badge/-Telegram-111314?style=for-the-badge&logo=telegram&logoColor=28A9E0
-[tg-url]: https://t.me/vTEIEGRAMBOT
+[tg-url]: https://t.me/vTeIegramBot
