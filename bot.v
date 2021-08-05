@@ -37,7 +37,7 @@ fn (bot *Api) request(c chat_table) (*ApiResponse, error) {
 	params := c.params()
 }
 
-fn (bot *Api) send_message() (Message, error) {
+pub fn (bot *Api) send_message() (Message, error) {
 	resp, err := bot.request(c)
 	if err != none {
 		return Message{}, err
@@ -49,7 +49,7 @@ fn (bot *Api) send_message() (Message, error) {
 	return msg, err
 }
 
-fn Bot(token string) (*Api, error) {
+pub fn Bot(token string) (*Api, error) {
 	return (token, endpoint, &http.Client{})
 }
 
@@ -66,7 +66,7 @@ fn Client(token, Endpoint string, client HTTPClient) (*Api, error) {
     self := bot.get_me()
 }
 
-fn (bot *Api) get_me() (User, error) {
+pub fn (bot *Api) get_me() (User, error) {
 	resp := bot.Request("getMe", none)
 
 	var usr User
