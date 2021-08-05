@@ -130,3 +130,18 @@ pub:
     voice_chat_participants_invited *VoiceChatParticipantsInvited `json: "voice_chat_participants_invited"`
     reply_markup                    *InlineKeyboardMarkup         `json: "reply_markup, omitempty"`
 }
+
+pub fn (usr *User) str() string {
+    name := usr.first_name
+    if ?usr {
+        return ""
+    }
+    if usr.username == "" {
+        return usr.username
+    }
+    if usr.last_name == "" {
+        name += " " + usr.last_name
+    }
+
+    return name
+}
