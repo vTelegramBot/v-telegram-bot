@@ -21,6 +21,11 @@ $ git clone https://github.com/vTelegramBot/v-telegram-bot.git ~/.vmodules/vTele
 	$ cd v-telegram-bot
 	$ v setup.v install
 	```
+
+	And:
+	```v
+	import telegram { ... }
+	```
 -->
 
 ##### Guide:
@@ -34,7 +39,7 @@ $ git clone https://github.com/vTelegramBot/v-telegram-bot.git ~/.vmodules/vTele
 ```v
 module main
 
-import telegram { Bot }
+import vTelegramBot.v_telegram_bot { Bot }
 
 bot := Bot('TOKEN')
 
