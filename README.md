@@ -5,14 +5,27 @@
 [![Telegram][tg-img]][tg-url]
 </div>
 
+## Installing [v-telegram-bot](https://git-scm.com/downloads)
+```sh
+$ git clone https://github.com/vTelegramBot/v-telegram-bot.git ~/.vmodules/vTelegramBot/v_telegram_bot
+```
+<!-- Comming soon...
+	You can install or upgrade v-telegram-bot with:
+	```sh
+	$ vpm install v-telegram-bot --upgrade
+	```
+
+	Or you can install from source with:
+	```sh
+	$ git clone https://github.com/vTelegramBot/v-telegram-bot.git
+	$ cd v-telegram-bot
+	$ v setup.v install
+	```
+-->
+
 ##### Guide:
 1. [How to use?](https://github.com/vTelegramBot/v-telegram-bot/wiki/How-to-use)
 2. [FAQ](https://github.com/vTelegramBot/v-telegram-bot/wiki/FAQ)
-
-## Installing [v-telegram-bot](https://git-scm.com/downloads)
-```sh
-git clone https://github.com/vTelegramBot/v-telegram-bot.git ~/.vmodules/vTelegramBot/v_telegram_bot
-```
 
 ## Example
 <details>
@@ -20,11 +33,13 @@ git clone https://github.com/vTelegramBot/v-telegram-bot.git ~/.vmodules/vTelegr
 
 ```v
 module main
-import vTelegramBot.v_telegram_bot { Bot }
+
+import telegram { Bot }
 
 bot := Bot('TOKEN')
 
-fn main() {
+
+fn main(message: Message) {
     bot.send_message(message.chat.id, 'Hello, vTelegramBot!')
 }
 ```
