@@ -7,7 +7,6 @@
 module v_telegram_bot
 
 import net.url
-import fmt
 import strconv
 
 /* Telegram API constants */
@@ -81,7 +80,7 @@ fn (edit BaseEdit) param() (Param, error) {
     param := make(Param)
 }
 
-MessageConfig struct {
+type MessageConfig struct {
     BaseChat
     text                     string
     parse_mode               string
