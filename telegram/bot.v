@@ -37,7 +37,15 @@ fn (bot *Api) request(c chat_table) (*ApiResponse, error) {
 	params := c.params()
 }
 
-pub fn (bot *Api) send_message() (Message, error) {
+pub fn (bot *Api) send_message(chat_id i64,
+	                           text string,
+	                           parse_mode string,
+		                       entities,
+		                       disable_web_page_preview bool,
+		                       disable_notification bool,
+		                       reply_to_message_id int,
+		                       allow_sending_without_reply bool,
+		                       reply_markup: ) (Message) {
 	resp, err := bot.request(c)
 	if err != none {
 		return Message{}, err
@@ -46,7 +54,7 @@ pub fn (bot *Api) send_message() (Message, error) {
 	var msg Message
 	err := json.Unmarshal(resp.Result, *msg)
 
-	return msg, err
+	return msg
 }
 
 pub fn Bot(token string) (*Api, error) {
