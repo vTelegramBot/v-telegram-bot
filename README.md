@@ -55,7 +55,7 @@ fn main(message: Message) {
 - Documentation: [docs/doc.md](https://github.com/vTelegramBot/v-telegram-bot/tree/master/docs/doc.md)
 - Source: [GitHub repo](https://github.com/vTelegramBot/v-telegram-bot)
 - Issues/Bug tracker: [GitHub issues tracker](https://github.com/vTelegramBot/v-telegram-bot/issues)
-- Test Bot: [@v4vendettaBot](https://t.me/v4vendettaBot)
+- Test Bot: [@vendettaBot](https://t.me/v4vendettaBot)
 
 ## Code Contributors
 xxx
