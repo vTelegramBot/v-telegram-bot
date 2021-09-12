@@ -52,10 +52,10 @@ fn main(message: Message) {
 
 ## Official resources:
 - News: [@vTelegramBot](https://t.me/vTeIegramBot)
-- Documentation: [docs/doc.md](https://github.com/vTelegramBot/v-telegram-bot/tree/master/docs/doc.md)
+- Documentation: [docs/doc.rst](https://github.com/vTelegramBot/v-telegram-bot/tree/master/docs/doc.rst)
 - Source: [GitHub repo](https://github.com/vTelegramBot/v-telegram-bot)
 - Issues/Bug tracker: [GitHub issues tracker](https://github.com/vTelegramBot/v-telegram-bot/issues)
-- Test Bot: [@vendettaBot](https://t.me/v4vendettaBot)
+- Test Bot: [@VendettaRobot](https://t.me/VendettaRobot)
 
 ## Code Contributors
 xxx
