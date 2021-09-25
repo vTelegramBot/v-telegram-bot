@@ -1,4 +1,4 @@
-# [v-telegram-bot](https://t.me/vTeIegramBot)
+# [v-telegram-bot](https://vlang.io)
 <div align="center">
 	<img type="image/jpeg" width="850" height="250" src="./assets/img/background.jpg" alt="V for Vendetta"/>
 
@@ -38,7 +38,6 @@ $ git clone https://github.com/vTelegramBot/v-telegram-bot.git ~/.vmodules/vTele
 
 ```v
 module main
-
 import vTelegramBot.v_telegram_bot { Bot }
 
 bot := Bot('TOKEN')
