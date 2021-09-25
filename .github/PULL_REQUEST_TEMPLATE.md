@@ -6,7 +6,7 @@
 #### Which change are you proposing?
 > Please replace this text with an explanation of why you think these changes should be made.
 
-Bug/Issue number: #xxx
+Bug/Issue closes: #xxx
 
 ---
 
