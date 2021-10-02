@@ -1,6 +1,8 @@
 # [v-telegram-bot](https://vlang.io)
 <div align="center">
-	<img type="image/jpeg" width="850" height="250" src="./assets/img/background.jpg" alt="V for Vendetta"/>
+	<img type="image/jpeg" width="850" height="250" 
+		src="https://github.com/vTelegramBot/.github/blob/master/profile/assets/img/v-for-vendetta.jpg" alt="V for Vendetta"
+	/>
 
 [![Telegram][tg-img]][tg-url]
 </div>
