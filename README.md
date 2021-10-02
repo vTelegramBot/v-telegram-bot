@@ -4,7 +4,7 @@
 		src="https://github.com/vTelegramBot/.github/blob/master/profile/assets/img/v-for-vendetta.jpg" alt="V for Vendetta"
 	/>
 
-[![Telegram][tg-img]][tg-url]
+[![Telegram][telegram-badge-img]][telegram-badge-url]
 </div>
 
 ## Installing [v-telegram-bot](https://git-scm.com/downloads)
@@ -61,5 +61,5 @@ fn main(message: Message) {
 ## Code Contributors
 xxx
 
-[tg-img]: https://img.shields.io/badge/-Telegram-111314?style=for-the-badge&logo=telegram&logoColor=28A9E0
-[tg-url]: https://t.me/vTeIegramBot
+[telegram-badge-img]: https://img.shields.io/badge/-Telegram-111314?style=for-the-badge&logo=telegram&logoColor=28A9E0
+[telegram-badge-url]: https://t.me/vTeIegramBot
