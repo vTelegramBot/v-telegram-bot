@@ -4,7 +4,7 @@
 * https://github.com/vTelegramBot/v-telegram-bot/blob/master/LICENSE
 */
 
-module v_telegram_bot
+module telegram
 
 import strconv
 import encoding.json
